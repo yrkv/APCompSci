@@ -3,9 +3,9 @@
 // This program will display text to the
 // console window.
 
-public class Example 
+public class Example
 {
-	public static void main(String args[]) 
+	public static void main(String args[])
 	{
 		System.out.println("My name is");
 		System.out.println("\"Yegor Kuznetsov\"");
@@ -26,4 +26,4 @@ I am an AP Computer Science student \ Period 3
 	at
 Iowa City West High School
 
-*/ 
+*/
