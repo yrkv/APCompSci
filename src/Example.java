@@ -2,7 +2,7 @@
 //
 // This program will display text to the
 // console window.
-
+ 
 public class Example
 {
 	public static void main(String args[])
