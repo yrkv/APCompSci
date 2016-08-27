@@ -1,7 +1,7 @@
 // Yegor Kuznetsov
 //
 // This program will draw a face
-// using the System.out.println function
+// using the println method in the System.out object
 
 public class U1A1 // begin the class
 {
