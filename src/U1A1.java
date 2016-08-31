@@ -7,12 +7,24 @@ public class U1A1 // begin the class
 {
 	public static void main(String[] args) // main method
 	{
-		System.out.println("  /////"); // draws the hair
-		System.out.println(" |     |"); // draws the forehead
-		System.out.println(" | \" \" |"); // draws the eyebrows
-		System.out.println(" | o o |"); // draws the eyes
-		System.out.println("(|  ^  |)"); // draws the nose and ears
-		System.out.println(" | \\_/ |"); // draws the mouth
-		System.out.println("  _____"); // draws the chin
+		System.out.print("  /////\n"); // hair
+		System.out.println(" |     |"); // forehead
+		System.out.println(" | \" \" |"); // eyebrows
+		System.out.println(" | o o |"); // eyes
+		System.out.println("(|  ^  |)"); // nose and ears
+		System.out.println(" | \\_/ |"); // mouth
+		System.out.println("  -----"); // chin
 	} // end the method
 } // end the class
+
+/*
+
+  /////
+ |     |
+ | " " |
+ | o o |
+(|  ^  |)
+ | \_/ |
+  -----
+
+*/
