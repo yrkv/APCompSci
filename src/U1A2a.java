@@ -10,17 +10,21 @@ public class U1A2a
 {
 	public static void main(String[] args)
 	{
+		// defines the rectangles
 		Rectangle one = new Rectangle(5, 10, 20, 30);
 		Rectangle two = new Rectangle(10, 25, 35, 15);
 		Rectangle three = new Rectangle(20, 30, 10, 25);
 
+		// prints the rectangles
 		System.out.println(one);
 		System.out.println(two);
 		System.out.println(three + "\n");
-
+		
+		// defines the intersections
 		Rectangle four = one.intersection(two);
 		Rectangle five = one.intersection(three);
 
+		// prints the intersections
 		System.out.println(four);
 		System.out.println(five);
 	}
