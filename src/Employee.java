@@ -1,7 +1,7 @@
 // Yegor Kuznetsov
 //
 // This class is used for the U1Test. It has methods to increase the
-// salary, which are tested in the U1Test program
+// salary of an employee, which are tested in the U1Test program.
 
 public class Employee
 {
