@@ -1,6 +1,7 @@
 // Yegor Kuznetsov
 //
-//
+// This class is used for the U1Test. It has methods to increase the
+// salary, which are tested in the U1Test program
 
 public class Employee
 {
@@ -12,15 +13,17 @@ public class Employee
 		name = "Hacker, Harry";
 		salary = 55000;
 	}
-	
-	public String getName() {
+
+	public String getName()
+	{
 		return name;
 	}
-	
-	public double getSalary() {
+
+	public double getSalary()
+	{
 		return salary;
 	}
-	
+
 	public void raiseSalary(double byPercent)
 	{
 		salary = salary * (1 + byPercent / 100);
