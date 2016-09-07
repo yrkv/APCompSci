@@ -9,8 +9,7 @@ public class U1Test
 	{
 		Employee emp = new Employee();
 
-		System.out.println(emp.getName() + "\n\n\n");
-		System.out.println(emp.getSalary());
+		System.out.println(emp.getName() + "   " + emp.getSalary());
 
 		emp.raiseSalary(4);
 		System.out.println(emp.getSalary());
@@ -24,11 +23,7 @@ public class U1Test
 }
 
 /* 
-Hacker, Harry
-
-
-
-55000.0
+Hacker, Harry   55000.0
 57200.0
 57400.0
 60557.0
