@@ -1,6 +1,7 @@
 // Yegor Kuznetsov
 //
-//
+// This is the Product class, used for the U2A1 project. It creates a
+// virtual product, and has methods to alter to cost.
 
 public class Product
 {
@@ -34,7 +35,7 @@ public class Product
 	{
 		return name;
 	}
-	
+
 	public double getCost()
 	{
 		return cost;
