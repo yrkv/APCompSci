@@ -24,7 +24,7 @@ public class U2A4
 		int day = easterSunday.getDay();
 
 		System.out.printf("Easter Sunday is on %s%d", name, day);
-	}
+	} 
 
 	public U2A4()
 	{
