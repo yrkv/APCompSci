@@ -1,4 +1,3 @@
-
 // Yegor Kuznetsov
 //
 //
@@ -20,7 +19,7 @@ public class U2A4
 
 		U2A4 u2a4 = new U2A4();
 
-		String name = u2a4.getMonthName(easterSunday.getMonth());
+		String name = u2a4.monthName(easterSunday.getMonth());
 		int day = easterSunday.getDay();
 
 		System.out.printf("Easter Sunday is on %s%d", name, day);
@@ -31,7 +30,7 @@ public class U2A4
 
 	}
 
-	public String getMonthName(int month)
+	public String monthName(int month)
 	{
 		Scanner in;
 		try
