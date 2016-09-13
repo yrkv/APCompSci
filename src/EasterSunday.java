@@ -1,6 +1,8 @@
 // Yegor Kuznetsov
 //
-//
+// This class has a parametric constructor that takes the year, uses
+// Guass's algorithm to get the day and month of Easter Sunday, and stores
+// them in two instance fields.
 
 public class EasterSunday
 {
