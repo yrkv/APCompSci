@@ -1,4 +1,3 @@
-
 // Yegor Kuznetsov
 //
 // This program uses the Scanner class to ask the user for a year, and
