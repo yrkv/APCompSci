@@ -15,29 +15,29 @@ public class U2A1
 		a.discount(30);
 		a.tax();
 		System.out.printf("Item: %s \n", a.getName());
-		System.out.printf("Cost: %.2f \n\n", a.getCost());
+		System.out.printf("Cost: $ %.2f \n\n", a.getCost());
 
 		b.discount(40);
 		b.discount(30);
 		b.tax();
 		System.out.printf("Item: %s \n", b.getName());
-		System.out.printf("Cost: %.2f \n\n", b.getCost());
+		System.out.printf("Cost: $ %.2f \n\n", b.getCost());
 
 		c.dollarsOff(5);
 		c.discount(30);
 		c.tax();
 		System.out.printf("Item: %s \n", c.getName());
-		System.out.printf("Cost: %.2f", c.getCost());
+		System.out.printf("Cost: $ %.2f", c.getCost());
 	}
 }
 
 /*
 Item: Jeans 
-Cost: 26.06 
+Cost: $ 26.06 
 
 Item: Sweater 
-Cost: 22.36 
+Cost: $ 22.36 
 
 Item: Shoes 
-Cost: 70.79
+Cost: $ 70.79
 */
