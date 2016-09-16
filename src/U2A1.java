@@ -30,3 +30,14 @@ public class U2A1
 		System.out.printf("Cost: %.2f", c.getCost());
 	}
 }
+
+/*
+Item: Jeans 
+Cost: 26.06 
+
+Item: Sweater 
+Cost: 22.36 
+
+Item: Shoes 
+Cost: 70.79
+*/

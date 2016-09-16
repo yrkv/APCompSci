@@ -39,6 +39,6 @@ public class DataSet
 
 	public double average()
 	{
-		return ((double) sum / (double) count);
+		return (double) sum / count;
 	}
 }

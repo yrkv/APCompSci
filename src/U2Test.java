@@ -37,8 +37,8 @@ public class U2Test
 		two.addValue(c);
 		two.addValue(d);
 
-		System.out.printf("\nDefault Constructor Average    = %2.1f", one.average());
-		System.out.printf("\nParametric Constructor Average = %2.1f", two.average());
+		System.out.printf("\nDefault Constructor Average    = %.1f", one.average());
+		System.out.printf("\nParametric Constructor Average = %.1f", two.average());
 
 	}
 }
