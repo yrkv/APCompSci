@@ -1,6 +1,9 @@
 // Yegor Kuznetsov
 //
-//
+// This class converts letter grades into numeric grades, and numeric
+// grades into letter grades. It has a parametric constructor that accepts
+// the old numeric and letter grades, and sets some instance fields to the
+// new grades.
 
 public class Grade
 {
