@@ -22,11 +22,11 @@ public class U2A2
 
 		System.out.println();
 
-		System.out.printf("Dollars = %d \n", cashier.getDollars());
+		System.out.printf("Dollars  = %d \n", cashier.getDollars());
 		System.out.printf("Quarters = %d \n", cashier.getQuarters());
-		System.out.printf("Dimes = %d \n", cashier.getDimes());
-		System.out.printf("Nickels = %d \n", cashier.getNickels());
-		System.out.printf("Pennies = %d \n", cashier.getPennies());
+		System.out.printf("Dimes    = %d \n", cashier.getDimes());
+		System.out.printf("Nickels  = %d \n", cashier.getNickels());
+		System.out.printf("Pennies  = %d \n", cashier.getPennies());
 	}
 }
 
@@ -34,9 +34,9 @@ public class U2A2
 Enter Amount Due: 41.35
 Enter Amount Received: 50.00
 
-Dollars = 8 
+Dollars  = 8 
 Quarters = 2 
-Dimes = 1 
-Nickels = 1 
-Pennies = 0 
+Dimes    = 1 
+Nickels  = 1 
+Pennies  = 0 
 */
