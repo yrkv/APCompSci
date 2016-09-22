@@ -1,6 +1,7 @@
 // Yegor Kuznetsov
 //
-//
+// This program shows dialog boxes that ask for your tax information,
+// and calculates what you owe. It then displays that in an applet window.
 
 import java.applet.Applet;
 import java.awt.Color;
@@ -21,27 +22,37 @@ public class U3A2 extends Applet
 	private int taxWithheld;
 	private double tax;
 	
-	
 	public void init()
 	{
-		name           = JOptionPane.showInputDialog("Enter your name:");
-		status         = JOptionPane.showInputDialog("Enter Filing Status - Single(S) or Married(M):");
-		blind          = JOptionPane.showInputDialog("Are you blind? Yes or No:");
-		over65         = JOptionPane.showInputDialog("Are you over 65? Yes or No:");
-		exemptions     = Integer.parseInt(JOptionPane.showInputDialog("Enter total number of exemptions:"));
-		income         = Integer.parseInt(JOptionPane.showInputDialog("Enter wages, salaries, & tips:"));
-		taxWithheld = Integer.parseInt(JOptionPane.showInputDialog("Enter income tax Withheld:"));
+		String m1 = "Enter your name:";
+		String m2 = "Enter Filing Status - Single(S) or Married(M):";
+		String m3 = "Are you blind? Yes or No:";
+		String m4 = "Are you over 65? Yes or No:";
+		String m5 = "Is your spouse blind? Yes or No:";
+		String m6 = "Is your spouse over 65? Yes or No:";
+		String m7 = "Enter total number of exemptions:";
+		String m8 = "Enter wages, salaries, & tips:";
+		String m9 = "Enter income tax Withheld:";
+		
+		name   = JOptionPane.showInputDialog(m1);
+		status = JOptionPane.showInputDialog(m2);
+		blind  = JOptionPane.showInputDialog(m3);
+		over65 = JOptionPane.showInputDialog(m4);
 		
 		if (status.equals("M"))
 		{
-			spouseBlind  = JOptionPane.showInputDialog("Is your spouse blind? Yes or No:");
-			spouseOver65 = JOptionPane.showInputDialog("Is your spouse over 65? Yes or No:");
+			spouseBlind  = JOptionPane.showInputDialog(m5);
+			spouseOver65 = JOptionPane.showInputDialog(m6);
 		}
 		else
 		{
-			spouseBlind  = "Yes";
+			spouseBlind  = "No";
 			spouseOver65 = "No";
 		}
+		
+		exemptions  = Integer.parseInt(JOptionPane.showInputDialog(m7));
+		income      = Integer.parseInt(JOptionPane.showInputDialog(m8));
+		taxWithheld = Integer.parseInt(JOptionPane.showInputDialog(m9));
 		
 		int deductions = exemptions + 
 				(blind.equals("Yes") ? 1 : 0) + 
@@ -49,7 +60,7 @@ public class U3A2 extends Applet
 				(spouseBlind.equals("Yes") ? 1 : 0) + 
 				(spouseOver65.equals("Yes") ? 1 : 0);
 		
-		income -= deductions * 10000;
+		income -= deductions * 1000;
 		
 		if (status.equals("S"))
 		{
@@ -86,14 +97,20 @@ public class U3A2 extends Applet
 		tax -= taxWithheld;
 		
 		setBackground(Color.white);
+		setSize(400, 300);
 	}
 	
 	public void paint(Graphics g)
 	{
 		g.setColor(Color.black);
 		
-		Font font = new Font("Monospaced", Font.PLAIN, 16);
+		Font font = new Font("Monospaced", Font.BOLD, 16);
 		g.setFont(font);
-		g.drawString(name, 25, 50);
+		g.drawString(name + ", below you will find", 10, 50);
+		g.drawString("the results of your Tax Inquiry.", 10, 75);
+		
+		String out = String.format("%.2f", Math.abs(tax));
+		
+		g.drawString((tax > 0 ? "Owe" : "Refund") + " =   $" + out, 100, 125);
 	}
 }
