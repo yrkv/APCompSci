@@ -16,7 +16,8 @@ public class TimeInterval
 	public TimeInterval(int start, int end, double p)
 	{
 		hours = (end - start) / 100;
-		minutes = end - start - hours * 100 - 40;
+		minutes = end % 100 + 60 - start % 100;
+		minutes %= 60;
 		pay = p;
 		setPay();
 	}
