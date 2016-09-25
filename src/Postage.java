@@ -20,7 +20,7 @@ public class Postage
 		}
 		if (type.equals("F"))
 		{
-			
+			34 + 21 * (weight - 1);
 		}
 	}
 }
