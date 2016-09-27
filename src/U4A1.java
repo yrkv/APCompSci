@@ -31,7 +31,7 @@ public class U4A1 extends JApplet
 
 			out.setTabSize(10 - number.length());
 
-			out.append("Number " + i + ":  " + number + " =\t" + binary.convert()
+			out.append("Number " + i + ": " + number + " =\t" + binary.convert()
 					+ "\n");
 
 			number = JOptionPane.showInputDialog("Enter Binary Number:");
