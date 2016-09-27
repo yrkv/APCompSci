@@ -5,8 +5,8 @@
 
 public class Postage
 {
-	String type;
-	double weight;
+	private String type;
+	private double weight;
 
 	public Postage(String type, double weight)
 	{

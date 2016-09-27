@@ -6,8 +6,8 @@
 
 public class Month
 {
-	int month;
-	String days;
+	private int month;
+	private String days;
 
 	public Month(int m)
 	{

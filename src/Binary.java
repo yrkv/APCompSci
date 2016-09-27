@@ -5,7 +5,7 @@
 
 public class Binary
 {
-	String number;
+	private String number;
 
 	public Binary(String n)
 	{
@@ -18,7 +18,6 @@ public class Binary
 		String numberCopy = number;
 		while (numberCopy.length() > 0)
 		{
-
 			out += Integer.parseInt(numberCopy.substring(0, 1))
 					* Math.pow(2, numberCopy.length() - 1);
 			numberCopy = numberCopy.substring(1);
