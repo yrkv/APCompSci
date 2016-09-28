@@ -39,6 +39,7 @@ public class U4A4
 
 	public int getMonths(double bal)
 	{
+		bal = Math.floor(bal * 100) / 100.0;
 		double monthlyPay = bal * minimumPaymentPercent / 100.0;
 		monthlyPay = (bal < 20) ? bal + 1 + apr / 12.0 : ((monthlyPay < 20) ? 20 : monthlyPay);
 		totalPaid += monthlyPay;
