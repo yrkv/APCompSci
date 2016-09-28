@@ -25,7 +25,7 @@ public class U2A4
 		String name = getMonthName(easterSunday.getMonth());
 		int day = easterSunday.getDay();
 
-		System.out.printf("Easter Sunday is on %s%d", name, day);
+		System.out.printf("Easter Sunday is on %s%d.", name, day);
 	}
 
 	public String getMonthName(int month)
@@ -45,11 +45,10 @@ public class U2A4
 		return monthName;
 	}
 }
-
 /*
 Enter the year: 2016
-Easter Sunday is on March    27
+Easter Sunday is on March    27.
 
 Enter the year: 2017
-Easter Sunday is on April    16
+Easter Sunday is on April    16.
 */
