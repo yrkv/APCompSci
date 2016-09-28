@@ -33,8 +33,10 @@ public class U2A4
 		Scanner in;
 		try
 		{
-			in = new Scanner(new File("src/U2A4.txt"));
-		} catch (IOException e)
+			in = new Scanner(new File("U:\\STUDENT\\PROJECTS\\West Projects"
+					+ "\\Computer Science\\JavaData\\U2A4.txt"));
+		}
+		catch (IOException e)
 		{
 			throw new RuntimeException(e.toString());
 		}
