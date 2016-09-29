@@ -32,27 +32,29 @@ public class U4A4
 
 		System.out.print("Enter annual percentage rate: ");
 		apr = in.nextInt() / 100.0;
-		
+
 		System.out.println("\n# of months to pay off debt = " + getMonths(balance));
-		System.out.printf("Profit for credit card company = $%.5f", profit);
+		System.out.printf("Profit for credit card company = $%.2f\n", profit);
 	}
 
 	public int getMonths(double bal)
 	{
-		bal = Math.floor(bal * 100) / 100.0;
 		double monthlyPay = bal * minimumPaymentPercent / 100.0;
-		monthlyPay = (bal < 20) ? bal + 1 + apr / 12.0 : ((monthlyPay < 20) ? 20 : monthlyPay);
+		monthlyPay = (bal < 20) ? bal * (1 + apr / 12)
+				: ((monthlyPay < 20) ? 20 : monthlyPay);
+		if (bal < 20)
+			totalPaid = totalPaid - bal * (1 + apr / 12) + bal;
 		totalPaid += monthlyPay;
-		double newBalance = bal * (1 + apr / 12.0) - monthlyPay;
+		double newBalance = bal * (1 + apr / 12) - monthlyPay;
 		profit = totalPaid - balance;
-		
+
 		months++;
 
 		if (newBalance > 0)
 		{
 			getMonths(newBalance);
 		}
-		
+
 		return months;
 	}
 }
