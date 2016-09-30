@@ -1,6 +1,8 @@
 // Yegor Kuznetsov
 //
-//
+// This program draws a salary schedule chart for teaches at schools. It
+// uses the base salary, number of lanes, and number of steps per lane to
+// generate the schedule.
 
 import java.awt.Container;
 import java.awt.Font;
@@ -51,12 +53,12 @@ public class U4A3 extends JApplet
 				val1 = (int) (val1 * 1.03);
 				val2 = val1;
 			}
-			
+
 			out.append("\n" + i + "\t");
 
 			for (int j = 1; j <= int2; j++)
 			{
-				if (j > 1) 
+				if (j > 1)
 				{
 					val2 = (int) (val2 * 1.09);
 				}
