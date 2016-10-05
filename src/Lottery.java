@@ -1,6 +1,7 @@
 // Yegor Kuznetsov
 //
-//
+// This class is used by U5A2 to simulate a lottery, and check if a set of
+// numbers wins anything.
 
 public class Lottery
 {
@@ -34,36 +35,36 @@ public class Lottery
 					matches++;
 			}
 		}
-		
+
 		switch (matches + 10 * (pb == ball ? 1 : 0))
 		{
-			case 15: 
+			case 15:
 				return 1000000;
-			case 5: 
+			case 5:
 				return 500000;
-			case 14: 
+			case 14:
 				return 10000;
-			case 4: 
+			case 4:
 				return 100;
-			case 13: 
+			case 13:
 				return 100;
-			case 3: 
+			case 3:
 				return 7;
-			case 12: 
+			case 12:
 				return 7;
-			case 11: 
+			case 11:
 				return 4;
-			case 10: 
+			case 10:
 				return 4;
 		}
 		return 0;
 	}
-	
+
 	public int getBall()
 	{
 		return ball;
 	}
-	
+
 	public int[] getNumbers()
 	{
 		return numbers;

@@ -1,6 +1,8 @@
 // Yegor Kuznetsov
 //
-//
+// This program simulates a lottery with 5 numbers and a power ball. If
+// someone wins over $10000, it displays their numbers. It also displays
+// how many people received some of the lesser rewards.
 
 public class U5A2
 {
@@ -12,7 +14,7 @@ public class U5A2
 
 		System.out.printf("This Week's Numbers Are:\n%d  %d  %d  %d  %d  %d\n\n",
 				n[0], n[1], n[2], n[3], n[4], lottery.getBall());
-		
+
 		int[] wins = new int[6];
 		for (int i = 1; i <= 1000000; i++)
 		{
@@ -37,15 +39,21 @@ public class U5A2
 				System.out.printf("Player #%d wins: $%d\n%d  %d  %d  %d  %d  %d\n\n",
 						i, money, numbers[0], numbers[1], numbers[2], numbers[3],
 						numbers[4], ball);
-			
-			if (money == 4) wins[0]++;
-			if (money == 7) wins[1]++;
-			if (money == 100) wins[2]++;
-			if (money == 10000) wins[3]++;
-			if (money == 500000) wins[4]++;
-			if (money == 1000000) wins[5]++;
+
+			if (money == 4)
+				wins[0]++;
+			if (money == 7)
+				wins[1]++;
+			if (money == 100)
+				wins[2]++;
+			if (money == 10000)
+				wins[3]++;
+			if (money == 500000)
+				wins[4]++;
+			if (money == 1000000)
+				wins[5]++;
 		}
-		
+
 		System.out.printf("$4 Winners:                %d\n", wins[0]);
 		System.out.printf("$7 Winners:                %d\n", wins[1]);
 		System.out.printf("$100 Winners:              %d\n", wins[2]);
