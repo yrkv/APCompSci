@@ -61,8 +61,13 @@ public class U4A3 extends JApplet
 				if (j > 1)
 				{
 					val2 = (int) (val2 * 1.09);
+				} else
+				{
+					out.append("  ");
 				}
-				out.append("   " + val2);
+				String num = String.format("%6d", val2);
+				out.append(String.format("%d", val2).length() > 5 ? " " + num + " "
+						: num + "  ");
 			}
 		}
 
