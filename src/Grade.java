@@ -20,7 +20,7 @@ public class Grade
 		setNewLetter();
 	}
 	
-	public void setNewNumeric()
+	private void setNewNumeric()
 	{
 		if (origLetter.equals("A+")) newNumeric = 4.0;
 		if (origLetter.equals("A"))  newNumeric = 4.0;
@@ -37,7 +37,7 @@ public class Grade
 		if (origLetter.equals("F"))  newNumeric = 0.0;
 	}
 	
-	public void setNewLetter()
+	private void setNewLetter()
 	{
 		if (origNumeric == 4.00)                       newLetter = "A+";
 		if (origNumeric < 4.00 && origNumeric >= 3.85) newLetter = "A";

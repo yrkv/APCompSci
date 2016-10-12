@@ -19,7 +19,7 @@ public class U5A3 extends JApplet
 		}
 		
 		fillArray();
-		
+		resize();
 		for (int i = 0; i < 30; i++)
 		{
 			int j = 0;
@@ -52,6 +52,9 @@ public class U5A3 extends JApplet
 		for (int i = 0; i < 50; i++)
 		{
 			array1[i] = (int) (5 * (Math.random() + i));
+		}
+		for (int i = 0; i < array1.length; i++)
+		{
 			System.out.print(array1[i] + ",");
 		}
 		System.out.println("}");
@@ -59,22 +62,19 @@ public class U5A3 extends JApplet
 	
 	public void insert(int num, int sub)
 	{
-		if (length < 80)
-			resize();
-	//	try
-	//	{
-			System.out.println(sub);
-			for (int k = length - 1; k > sub; k--)
+		
+//		try
+//		{
+			for (int k = 90; k > sub; k--)
 			{
 				array1[k] = array1[k - 1];
 			}
 			array1[sub] = num;
-			length++;
-	//	}
-	//	catch (RuntimeException e)
-	//	{
-
-	//	}
+//		}
+//		catch (RuntimeException e)
+//		{
+//			resize();
+//		}
 	}
 	
 	public void resize()
