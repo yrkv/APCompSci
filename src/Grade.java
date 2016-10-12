@@ -22,19 +22,19 @@ public class Grade
 	
 	private void setNewNumeric()
 	{
-		if (origLetter.equals("A+")) newNumeric = 4.0;
-		if (origLetter.equals("A"))  newNumeric = 4.0;
-		if (origLetter.equals("A-")) newNumeric = 3.7;
-		if (origLetter.equals("B+")) newNumeric = 3.3;
-		if (origLetter.equals("B"))  newNumeric = 3.0;
-		if (origLetter.equals("B-")) newNumeric = 2.7;
-		if (origLetter.equals("C+")) newNumeric = 2.3;
-		if (origLetter.equals("C"))  newNumeric = 2.0;
-		if (origLetter.equals("C-")) newNumeric = 1.7;
-		if (origLetter.equals("D+")) newNumeric = 1.3;
-		if (origLetter.equals("D"))  newNumeric = 1.0;
-		if (origLetter.equals("D-")) newNumeric = 0.7;
-		if (origLetter.equals("F"))  newNumeric = 0.0;
+		String letter = origLetter.substring(0, 1);
+		String sign = origLetter.substring(1);
+		
+		if (letter.equals("A")) newNumeric = 4.0;
+		if (letter.equals("B")) newNumeric = 3.0;
+		if (letter.equals("C")) newNumeric = 2.0;
+		if (letter.equals("D")) newNumeric = 1.0;
+		if (letter.equals("F")) newNumeric = 0.0;
+		
+		if (sign.equals("-")) newNumeric -= 0.3;
+		if (sign.equals("+")) newNumeric += 0.3;
+		
+		if (newNumeric > 4.0) newNumeric = 4.0;
 	}
 	
 	private void setNewLetter()
