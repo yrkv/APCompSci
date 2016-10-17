@@ -11,19 +11,14 @@ import javax.swing.JOptionPane;
 
 public class U3A2 extends Applet
 {
-	private String name;
-	private String status;
-	private String blind;
-	private String over65;
-	private String spouseBlind;
-	private String spouseOver65;
-	private int exemptions;
-	private int income;
-	private int taxWithheld;
 	private double tax;
+	private String name;
 	
 	public void init()
 	{
+		String status, blind, over65, spouseBlind, spouseOver65;
+		int exemptions, income, taxWithheld;
+		
 		String m1 = "Enter your name:";
 		String m2 = "Enter Filing Status - Single(S) or Married(M):";
 		String m3 = "Are you blind? Yes or No:";
@@ -109,7 +104,7 @@ public class U3A2 extends Applet
 		g.drawString(name + ", below you will find", 10, 50);
 		g.drawString("the results of your Tax Inquiry.", 10, 75);
 		
-		String out = String.format("%.2f", Math.abs(tax));
+		String out = String.format("%7.2f", Math.abs(tax));
 		
 		g.drawString((tax > 0 ? "Owe" : "Refund") + " =   $" + out, 100, 125);
 	}
