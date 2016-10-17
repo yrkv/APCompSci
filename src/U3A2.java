@@ -104,7 +104,7 @@ public class U3A2 extends Applet
 		g.drawString(name + ", below you will find", 10, 50);
 		g.drawString("the results of your Tax Inquiry.", 10, 75);
 		
-		String out = String.format("%7.2f", Math.abs(tax));
+		String out = String.format("%.2f", Math.abs(tax));
 		
 		g.drawString((tax > 0 ? "Owe" : "Refund") + " =   $" + out, 100, 125);
 	}
