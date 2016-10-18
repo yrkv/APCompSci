@@ -1,82 +1,95 @@
 // Yegor Kuznetsov
 //
-//
+// This program creates an array with a length between 50 and 100, and puts
+// 50 integers in it in ascending order. It then inserts 30 random integers
+// into it, and displays the array before and after.
 
+import java.awt.Container;
+import java.awt.Font;
 import javax.swing.JApplet;
+import javax.swing.JTextArea;
 
 public class U5A3 extends JApplet
 {
 	private int length;
 	private int[] array1;
 	private int[] array2;
-	
+	private JTextArea out;
+
 	public void init()
 	{
+		out = new JTextArea();
+		out.setFont(new Font("Monospaced", Font.BOLD, 12));
+		out.append("Original Array\n");
+
+		fillArray();
+
 		array2 = new int[30];
 		for (int i = 0; i < 30; i++)
 		{
 			array2[i] = (int) (256 * Math.random());
 		}
-		
-		fillArray();
-		resize();
+
 		for (int i = 0; i < 30; i++)
 		{
 			int j = 0;
 			boolean found = false;
-			
-			while (j < length && !found)
+			while (j < length - 1 && !found)
 			{
-				if (array2[i] > array1[j])
+				if (array2[i] > array1[j] && !(array1[j] == 0 && j > 1))
 					j++;
 				else
 					found = true;
 			}
 			insert(array2[i], j);
 		}
-		
-		System.out.print("{");
-		for (int i = 0; i < length; i++)
+
+		out.append("\n\n\nUpdated Array\n");
+		for (int i = 0; i < 80; i++)
 		{
-			System.out.print(array1[i] + ",");
+			if (i % 10 == 0)
+				out.append("\n");
+			out.append(array1[i] + "\t");
 		}
-		System.out.println("}");
+		out.append("\n\nArrayLength = " + length);
+
+		setSize(750, 500);
+		Container container = getContentPane();
+		container.add(out);
 	}
-	
-	public void fillArray() 
+
+	public void fillArray()
 	{
 		length = (int) (51 * Math.random() + 50);
-		System.out.println(length);
 		array1 = new int[length];
-		System.out.print("{");
 		for (int i = 0; i < 50; i++)
 		{
 			array1[i] = (int) (5 * (Math.random() + i));
+			if (i % 10 == 0)
+				out.append("\n");
+			out.append(array1[i] + "\t");
 		}
-		for (int i = 0; i < array1.length; i++)
-		{
-			System.out.print(array1[i] + ",");
-		}
-		System.out.println("}");
+		out.append("\n\nArrayLength = " + length);
 	}
-	
+
 	public void insert(int num, int sub)
 	{
-		
-//		try
-//		{
-			for (int k = 90; k > sub; k--)
+		if (length < 80)
+			resize();
+		try
+		{
+			for (int k = length - 1; k > sub; k--)
 			{
 				array1[k] = array1[k - 1];
 			}
 			array1[sub] = num;
-//		}
-//		catch (RuntimeException e)
-//		{
-//			resize();
-//		}
+		}
+		catch (RuntimeException e)
+		{
+			resize();
+		}
 	}
-	
+
 	public void resize()
 	{
 		int[] newArray = new int[2 * length];
