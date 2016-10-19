@@ -11,8 +11,8 @@ import javax.swing.JOptionPane;
 
 public class U3A3 extends JApplet
 {
-	String monthInt;
-	String monthName;
+	private String monthInt;
+	private String monthName;
 
 	public void init()
 	{

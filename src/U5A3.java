@@ -13,7 +13,6 @@ public class U5A3 extends JApplet
 {
 	private int length;
 	private int[] array1;
-	private int[] array2;
 	private JTextArea out;
 
 	public void init()
@@ -24,7 +23,7 @@ public class U5A3 extends JApplet
 
 		fillArray();
 
-		array2 = new int[30];
+		int[] array2 = new int[30];
 		for (int i = 0; i < 30; i++)
 		{
 			array2[i] = (int) (256 * Math.random());
@@ -58,7 +57,7 @@ public class U5A3 extends JApplet
 		container.add(out);
 	}
 
-	public void fillArray()
+	private void fillArray()
 	{
 		length = (int) (51 * Math.random() + 50);
 		array1 = new int[length];
@@ -72,7 +71,7 @@ public class U5A3 extends JApplet
 		out.append("\n\nArrayLength = " + length);
 	}
 
-	public void insert(int num, int sub)
+	private void insert(int num, int sub)
 	{
 		if (length < 80)
 			resize();
@@ -90,7 +89,7 @@ public class U5A3 extends JApplet
 		}
 	}
 
-	public void resize()
+	private void resize()
 	{
 		int[] newArray = new int[2 * length];
 		System.arraycopy(array1, 0, newArray, 0, length);
