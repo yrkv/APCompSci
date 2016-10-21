@@ -20,7 +20,7 @@ public class Month
 		return days;
 	}
 
-	public void setDays()
+	private void setDays()
 	{
 		switch (month)
 		{
@@ -41,7 +41,6 @@ public class Month
 				break;
 			case 2:
 				days = "28 or 29";
-				break;
 		}
 	}
 }
