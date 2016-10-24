@@ -25,5 +25,14 @@ public class U5Test
 		for (String city : itinerary)
 			System.out.println(city);
 	}
-
 }
+
+/*
+The Itinerary
+-------------
+Ames
+Waterloo
+Iowa City
+Burlington
+Ottumwa
+*/
