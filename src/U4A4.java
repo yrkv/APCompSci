@@ -38,7 +38,7 @@ public class U4A4
 		System.out.printf("Profit for credit card company = $%.2f", profit);
 	}
 
-	public int getMonths(double bal)
+	private int getMonths(double bal)
 	{
 		double monthlyPay = bal * minimumPaymentPercent / 100.0;
 		monthlyPay = (bal < 20) ? bal * (1 + apr / 12)

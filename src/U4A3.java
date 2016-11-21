@@ -30,7 +30,7 @@ public class U4A3 extends JApplet
 		String token3 = tokenizer.nextToken();
 
 		int int1 = Integer.parseInt(token1);
-		int int2 = Integer.parseInt(token2);
+		int int2 = Integer.parseInt(token2);                    
 		int int3 = Integer.parseInt(token3);
 
 		out.setTabSize(6);
