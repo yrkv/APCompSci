@@ -44,7 +44,9 @@ public class U4A4
 		monthlyPay = (bal < 20) ? bal * (1 + apr / 12)
 				: ((monthlyPay < 20) ? 20 : monthlyPay);
 		totalPaid += monthlyPay;
+		
 		totalPaid -= (bal < 20) ? bal * (1 + apr / 12) - bal : 0;
+		
 		double newBalance = bal * (1 + apr / 12) - monthlyPay;
 
 		months++;

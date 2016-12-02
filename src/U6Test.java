@@ -1,6 +1,7 @@
 // Yegor Kuznetsov
 //
-//
+// This program sorts an array of names alphabetically and by length, and
+// finds the name "Jones" in each.
 
 import java.awt.Container;
 import java.awt.Font;
@@ -20,38 +21,42 @@ public class U6Test extends JApplet
 		JTextArea out = new JTextArea();
 		out.setFont(new Font("Monospaced", Font.BOLD, 12));
 
-		out.append(
-				"Sorted Alphabetically   Sorted by Length\n---------------------   ----------------\n");
+		out.append("Sorted Alphabetically   Sorted by Length\n"
+				+ "---------------------   ----------------\n");
 
 		String[] b = new String[a.length];
 		String[] c = new String[a.length];
-		
+
 		System.arraycopy(a, 0, b, 0, a.length);
-		for (int j = 0; j < a.length - 1; j++)
+		int j;
+		String temp;
+		for (int n = 1; n < a.length; n++)
 		{
-			for (int i = 0; i < a.length - 1; i++)
+			temp = b[n];
+			j = n;
+
+			while (j > 0 && temp.compareTo(b[j - 1]) < 0)
 			{
-				if (b[i].compareTo(b[i + 1]) > 0)
-				{
-					String t = b[i];
-					b[i] = b[i + 1];
-					b[i + 1] = t;
-				}
+				b[j] = b[j - 1];
+				j--;
 			}
+
+			b[j] = temp;
 		}
 
 		System.arraycopy(b, 0, c, 0, a.length);
-		for (int j = 0; j < a.length - 1; j++)
+		for (int n = 1; n < a.length; n++)
 		{
-			for (int i = 0; i < a.length - 1; i++)
+			temp = c[n];
+			j = n;
+
+			while (j > 0 && temp.length() < c[j - 1].length())
 			{
-				if (c[i].length() > c[i + 1].length())
-				{
-					String t = c[i];
-					c[i] = c[i + 1];
-					c[i + 1] = t;
-				}
+				c[j] = c[j - 1];
+				j--;
 			}
+
+			c[j] = temp;
 		}
 
 		out.setTabSize(24);
