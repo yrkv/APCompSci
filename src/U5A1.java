@@ -26,7 +26,7 @@ public class U5A1
 		System.out.printf("Correlation = %.2f", correlation(apExam, grades));
 	}
 
-	public double mean(int[] scores)
+	private double mean(int[] scores)
 	{
 		double sum = 0;
 		for (int x : scores)
@@ -34,7 +34,7 @@ public class U5A1
 		return sum / scores.length;
 	}
 
-	public double standardDev(int[] scores)
+	private double standardDev(int[] scores)
 	{
 		double mean = mean(scores);
 		double sum = 0;
@@ -43,7 +43,7 @@ public class U5A1
 		return Math.sqrt(sum / scores.length);
 	}
 
-	public double correlation(int[] a, int[] b)
+	private double correlation(int[] a, int[] b)
 	{
 		double sum = 0;
 		double mean_a = mean(a);
