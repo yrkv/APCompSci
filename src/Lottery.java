@@ -5,8 +5,8 @@
 
 public class Lottery
 {
-	int[] numbers = new int[5];
-	int ball;
+	private int[] numbers = new int[5];
+	private int ball;
 
 	public Lottery()
 	{

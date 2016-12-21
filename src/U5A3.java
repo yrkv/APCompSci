@@ -6,6 +6,7 @@
 
 import java.awt.Container;
 import java.awt.Font;
+import javax.swing.JOptionPane;
 import javax.swing.JApplet;
 import javax.swing.JTextArea;
 
@@ -35,7 +36,7 @@ public class U5A3 extends JApplet
 			boolean found = false;
 			while (j < length - 1 && !found)
 			{
-				if (array2[i] > array1[j] && !(array1[j] == 0 && j > 1))
+				if (array2[i] > array1[j])
 					j++;
 				else
 					found = true;
@@ -50,7 +51,7 @@ public class U5A3 extends JApplet
 				out.append("\n");
 			out.append(array1[i] + "\t");
 		}
-		out.append("\n\nArrayLength = " + length);
+		out.append("\n\nArrayLength = " + array1.length);
 
 		setSize(750, 500);
 		Container container = getContentPane();
@@ -69,31 +70,32 @@ public class U5A3 extends JApplet
 			out.append(array1[i] + "\t");
 		}
 		out.append("\n\nArrayLength = " + length);
+		length = 50;
 	}
 
 	private void insert(int num, int sub)
 	{
-		if (length < 80)
-			resize();
 		try
 		{
-			for (int k = length - 1; k > sub; k--)
+			for (int k = length; k > sub; k--)
 			{
 				array1[k] = array1[k - 1];
 			}
 			array1[sub] = num;
+			length++;
 		}
-		catch (RuntimeException e)
+		catch (ArrayIndexOutOfBoundsException e)
 		{
 			resize();
+			insert(num, sub);
 		}
 	}
 
 	private void resize()
 	{
-		int[] newArray = new int[2 * length];
-		System.arraycopy(array1, 0, newArray, 0, length);
+		JOptionPane.showMessageDialog(null, "Index out of Bounds - Resizing Array");
+		int[] newArray = new int[2 * array1.length];
+		System.arraycopy(array1, 0, newArray, 0, array1.length);
 		array1 = newArray;
-		length *= 2;
 	}
 }
