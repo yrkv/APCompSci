@@ -34,7 +34,7 @@ public class U5A3 extends JApplet
 		{
 			int j = 0;
 			boolean found = false;
-			while (j < length - 1 && !found)
+			while (j < length && !found)
 			{
 				if (array2[i] > array1[j])
 					j++;
