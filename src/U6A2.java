@@ -1,7 +1,7 @@
 // Yegor Kuznetsov
 //
 // This program compares the speed of the merge and quick sorts. It
-// generates 5000 random numbers between 0 and 999 inclusive, and runs the
+// generates 10000 random numbers between 0 and 999 inclusive, and runs the
 // 2 sorts, displaying the times.
 
 import java.awt.Container;
@@ -12,8 +12,9 @@ import javax.swing.JTextArea;
 
 public class U6A2 extends JApplet
 {
-	private int[] a1 = new int[5000];
-	private int[] a2 = new int[5000];
+	private int length = 10000;
+	private int[] a1 = new int[length];
+	private int[] a2 = new int[length];
 
 	public void init()
 	{
@@ -26,7 +27,7 @@ public class U6A2 extends JApplet
 		for (int i = 0; i < 15; i++)
 			out.append(a1[i] + "\t");
 		out.append("\n    -\n    -\n    -\n");
-		for (int i = 4985; i < 5000; i++)
+		for (int i = length - 15; i < length; i++)
 			out.append(a1[i] + "\t");
 
 		MergeSorter merge = new MergeSorter(a1);
@@ -37,19 +38,19 @@ public class U6A2 extends JApplet
 		for (int i = 0; i < 15; i++)
 			out.append(mergeArray[i] + "\t");
 		out.append("\n    -\n    -\n    -\n");
-		for (int i = 4985; i < 5000; i++)
+		for (int i = length - 15; i < length; i++)
 			out.append(mergeArray[i] + "\t");
 		out.append("\n\n" + mergeTime + " milliseconds");
 
 		QuickSorter quick = new QuickSorter(a2);
-		long quickTime = quick.sort(0, 4999);
+		long quickTime = quick.sort(0, length - 1);
 		int[] quickArray = quick.getArray();
 
 		out.append("\n\n\nQuickSort\n\n");
 		for (int i = 0; i < 15; i++)
 			out.append(quickArray[i] + "\t");
 		out.append("\n    -\n    -\n    -\n");
-		for (int i = 4985; i < 5000; i++)
+		for (int i = length - 15; i < length; i++)
 			out.append(quickArray[i] + "\t");
 		out.append("\n\n" + quickTime + " milliseconds");
 
@@ -61,7 +62,7 @@ public class U6A2 extends JApplet
 	private void buildArrays()
 	{
 		Random random = new Random();
-		for (int i = 0; i < 5000; i++)
+		for (int i = 0; i < length; i++)
 		{
 			a1[i] = random.nextInt(1000);
 			a2[i] = a1[i];
