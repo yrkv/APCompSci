@@ -2,58 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b206975-cf6b-4c16-a8c1-999d660fd469" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/U7A3/Board.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/U7A3/Piece.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/U7A3/TicTacToe.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Binary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Cashier.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Cylinder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/DataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/DistanceChart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/EasterSunday.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Employee.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Example.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Example2a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Example3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Grade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Lottery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/MergeSorter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Month.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Postage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/QuickSorter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/RoachPopulation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Sort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/TimeInterval.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U1A1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U1A2a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U1A2b.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U1A3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U1Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U2A1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U2A2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U2A3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U2A4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U2Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U3A1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U3A2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U3A3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U3Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U4A1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U4A2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U4A3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U4A4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U4FR.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U4Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U5A1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U5A2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U5A3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U5A4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U5Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U6A1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U6A2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U6A3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/U6Test.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/Board.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/Piece.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/TicTacToe.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/U7A3/Board.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/U7A3/Piece.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/U7A3/TicTacToe.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AP Computer Science.iml" afterPath="$PROJECT_DIR$/AP Computer Science.iml" />
     </list>
@@ -75,38 +29,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/U7A3/Board.java">
+        <entry file="file://$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#833#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Piece.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/U7A3/Piece.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#407#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TicTacToe.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/U7A3/TicTacToe.java">
+        <entry file="file://$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#4777#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -229,7 +166,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="U7A3" />
+              <option name="myItemId" value="U7A3 Yegor Kuznetsov" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,7 +701,7 @@
       <workItem from="1487869483553" duration="522000" />
       <workItem from="1487954952929" duration="3000000" />
       <workItem from="1488214556843" duration="2570000" />
-      <workItem from="1488300686573" duration="163000" />
+      <workItem from="1488300686573" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1482340809317</created>
@@ -780,11 +717,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487265275031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="U7A3">
+      <created>1488300869974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1488300869974</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19301000" />
+    <option name="totallyTimeSpent" value="20950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -793,13 +737,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5043243" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.49567568" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32719395" sideWeight="0.49567568" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -816,7 +761,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -830,7 +774,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aaa" />
     <MESSAGE value="U7A2" />
-    <option name="LAST_COMMIT_MESSAGE" value="U7A2" />
+    <MESSAGE value="U7A3" />
+    <option name="LAST_COMMIT_MESSAGE" value="U7A3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -843,55 +788,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/U7A3/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/U7A3/TicTacToe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#4777#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/U7A3/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#833#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/U7A3/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/U7A3/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#4777#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,34 +1085,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/U7A3/Board.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/jdk1.8.0_91/jre/lib/rt.jar!/java/util/EventListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#0#833#0" expanded="true" />
+            <element signature="e#0#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/U7A3/Piece.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/jdk1.8.0_91/jre/lib/rt.jar!/java/awt/event/MouseListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#407#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/U7A3/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#4777#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/U7A3/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/U7A3/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/U7A3 Yegor Kuznetsov/TicTacToe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

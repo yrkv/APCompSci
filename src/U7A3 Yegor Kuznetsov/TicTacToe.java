@@ -104,10 +104,13 @@ public class TicTacToe implements MouseListener
 
     public void mousePressed(MouseEvent e)
     {}
+
     public void mouseEntered(MouseEvent e)
     {}
+
     public void mouseExited(MouseEvent e)
     {}
+
     public void mouseReleased(MouseEvent e)
     {}
 
@@ -131,7 +134,6 @@ public class TicTacToe implements MouseListener
             }
 
             board.drawBoard();
-
         }
     }
 
