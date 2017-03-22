@@ -4,18 +4,18 @@
 // method to add an integer, and a method to get the average of all the
 // integers.
 
-public class DataSet
+public class DataSet_Old
 {
 	private int sum;
 	private int count;
 
-	public DataSet()
+	public DataSet_Old()
 	{
 		sum = 0;
 		count = 0;
 	}
 
-	public DataSet(int s, int c)
+	public DataSet_Old(int s, int c)
 	{
 		sum = s;
 		count = c;

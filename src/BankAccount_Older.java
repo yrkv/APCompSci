@@ -1,25 +1,27 @@
 // Yegor Kuznetsov
 //
-// The BankAccount_Old class manages... bank accounts! It stores
-// their balance and has a number of methods to move around money.
+// The BankAccount_Older class manages... bank accounts! It store
+// their balance and has a number of methods to move around money
 
-public class BankAccount_Old
+public class BankAccount_Older
 {
-    private String accountNumber;
+    private int accountNumber;
     private double balance;
-    private String accountType;
+    private static int lastAssignedNum = 100;
     private static final double INTEREST_RATE = 1.04;
 
-    public BankAccount_Old(String accountNumber, double balance)
+    public BankAccount_Older()
     {
-        this.balance = balance;
-        this.accountNumber = accountNumber;
-        setAccountNumber(accountNumber);
+        balance = Math.random() * 1000;
+        lastAssignedNum++;
+        accountNumber = lastAssignedNum;
     }
 
-    private void setAccountNumber(String account)
+    public BankAccount_Older(double balance)
     {
-        accountType = account.substring(account.length() - 1, account.length());
+        this.balance = balance;
+        lastAssignedNum++;
+        accountNumber = lastAssignedNum;
     }
 
     public String deposit(double amount)
@@ -43,12 +45,11 @@ public class BankAccount_Old
 
     public double calculate()
     {
-        if (accountType.equals("s"))
-            balance *= INTEREST_RATE;
+        balance *= INTEREST_RATE;
         return balance;
     }
 
-    public String getAccountNumber()
+    public int getAccountNumber()
     {
         return accountNumber;
     }
@@ -63,12 +64,7 @@ public class BankAccount_Old
         return INTEREST_RATE * 100 - 100;
     }
 
-    public String getAccountType()
-    {
-        return accountType;
-    }
-
-    public static String transfer(BankAccount_Old a, BankAccount_Old b, double amount)
+    public static String transfer(BankAccount_Older a, BankAccount_Older b, double amount)
     {
         String withdraw = a.withdraw(amount);
         if (withdraw.equals("Withdrawal Accepted"))

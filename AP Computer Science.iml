@@ -6,6 +6,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/U7A3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/U7A3 Yegor Kuznetsov" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/U8A1 Yegor Kuznetsov" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

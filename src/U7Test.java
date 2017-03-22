@@ -1,6 +1,6 @@
 // Yegor Kuznetsov
 //
-// This is the driver class for BBPlayer
+// This is the driver class for BBPlayer_Old
 
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class U7Test extends JFrame
 {
-    private ArrayList<BBPlayer> bbPlayers = new ArrayList<BBPlayer>();
+    private ArrayList<BBPlayer_Old> bbPlayers = new ArrayList<BBPlayer_Old>();
     private JTextArea out = new JTextArea();
 
     public static void main(String[] args)
@@ -35,7 +35,7 @@ public class U7Test extends JFrame
                     "U:\\STUDENT\\PROJECTS\\West Projects"
                     +"\\Computer Science\\JavaData\\u7test.txt"));
             while (scanner.hasNextLine())
-                bbPlayers.add(new BBPlayer(scanner.nextLine()));
+                bbPlayers.add(new BBPlayer_Old(scanner.nextLine()));
         }
         catch (IOException e)
         {
@@ -45,12 +45,12 @@ public class U7Test extends JFrame
         PrintList();
     }
 
-    public void PrintList()
+    private void PrintList()
     {
         out.append("Original List\n\n");
         out.append("Number\tYear\tPosition\tPoint Per Game\n");
         out.append("------\t----\t--------\t--------------\n");
-        for (BBPlayer bb: bbPlayers)
+        for (BBPlayer_Old bb: bbPlayers)
             out.append("  " + bb.getNum() + "\t " + bb.getYear()
                     + "\t   " + bb.getPos() + "\t\t     " + bb.getPpg() + "\n");
 
@@ -61,15 +61,15 @@ public class U7Test extends JFrame
         out.append("Sorted List\n\n");
         out.append("Number\tYear\tPosition\tPoint Per Game\n");
         out.append("------\t----\t--------\t--------------\n");
-        for (BBPlayer bb: bbPlayers)
+        for (BBPlayer_Old bb: bbPlayers)
             out.append("  " + bb.getNum() + "\t " + bb.getYear()
                     + "\t   " + bb.getPos() + "\t\t     " + bb.getPpg() + "\n");
     }
 
-    public void Sort()
+    private void Sort()
     {
         int j;
-        BBPlayer temp;
+        BBPlayer_Old temp;
 
         for (int n = 1; n < bbPlayers.size(); n++)
         {

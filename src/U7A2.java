@@ -1,6 +1,6 @@
 // Yegor Kuznetsov
 //
-// This is the driver class for the new BankAccount class. It creates
+// This is the driver class for the new BankAccount_Old class. It creates
 // many bank accounts using a file, does some stuff to them, and writes
 // their final values to a file.
 
@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 
 public class U7A2 extends JFrame
 {
-    private ArrayList<BankAccount> bankAccounts = new ArrayList<BankAccount>();
+    private ArrayList<BankAccount_Old> bankAccounts = new ArrayList<BankAccount_Old>();
     JTextArea out = new JTextArea();
 
     public static void main(String[] args)
@@ -51,7 +51,7 @@ public class U7A2 extends JFrame
             {
                 StringTokenizer st = new StringTokenizer(scanner.nextLine());
 
-                bankAccounts.add(new BankAccount(st.nextToken(),
+                bankAccounts.add(new BankAccount_Old(st.nextToken(),
                         Double.parseDouble(st.nextToken())));
             }
         }
@@ -67,7 +67,7 @@ public class U7A2 extends JFrame
 
         for (int i = 0; i < bankAccounts.size(); i++)
         {
-            BankAccount account = bankAccounts.get(i);
+            BankAccount_Old account = bankAccounts.get(i);
 
             out.append(String.format(account.getAccountNumber()
                     + "\t$ %.2f\n", account.getBalance()));
@@ -105,7 +105,7 @@ public class U7A2 extends JFrame
 
     private void InsertNewAcct(String accountNum, double initDep)
     {
-        BankAccount account = new BankAccount(accountNum, initDep);
+        BankAccount_Old account = new BankAccount_Old(accountNum, initDep);
 
         String type = account.getAccountType();
 
@@ -151,7 +151,7 @@ public class U7A2 extends JFrame
                 break;
         }
 
-        bankAccounts.set(i, new BankAccount(accountNum, balance));
+        bankAccounts.set(i, new BankAccount_Old(accountNum, balance));
         out.append("Correction Completed\n");
     }
 
@@ -174,7 +174,7 @@ public class U7A2 extends JFrame
 
             for (int i = 0; i < bankAccounts.size(); i++)
             {
-                BankAccount account = bankAccounts.get(i);
+                BankAccount_Old account = bankAccounts.get(i);
 
                 out.println(account.getAccountNumber()
                         + String.format(" %.2f", account.getBalance()));

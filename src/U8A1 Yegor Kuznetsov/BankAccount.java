@@ -1,9 +1,9 @@
 // Yegor Kuznetsov
 //
-// The BankAccount class manages... bank accounts! It stores
+// The BankAccount_Old class manages... bank accounts! It stores
 // their balance and has a number of methods to move around money.
 
-public class BankAccount
+public class BankAccount implements Measurable
 {
     private String accountNumber;
     private double balance;
@@ -53,7 +53,7 @@ public class BankAccount
         return accountNumber;
     }
 
-    public double getBalance()
+    public double getMeasure()
     {
         return balance;
     }
@@ -68,7 +68,7 @@ public class BankAccount
         return accountType;
     }
 
-    public static String transfer(BankAccount a, BankAccount b, double amount)
+    public static String transfer(BankAccount_Old a, BankAccount_Old b, double amount)
     {
         String withdraw = a.withdraw(amount);
         if (withdraw.equals("Withdrawal Accepted"))

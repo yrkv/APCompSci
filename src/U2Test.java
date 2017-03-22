@@ -1,6 +1,6 @@
 // Yegor Kuznetsov
 //
-// This program is the driver for the DataSet class. It creates two
+// This program is the driver for the DataSet_Old class. It creates two
 // DataSets, adds four numbers that are input from the console. It then
 // outputs the output of the "average" method for both sets.
 
@@ -10,8 +10,8 @@ public class U2Test
 {
 	public static void main(String[] args)
 	{
-		DataSet one = new DataSet();
-		DataSet two = new DataSet(73, 8);
+		DataSet_Old one = new DataSet_Old();
+		DataSet_Old two = new DataSet_Old(73, 8);
 
 		Scanner in = new Scanner(System.in);
 

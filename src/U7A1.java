@@ -1,6 +1,6 @@
 // Yegor Kuznetsov
 //
-// This is a driver class to test the BankAccount_Old class. It creates
+// This is a driver class to test the BankAccount_Older class. It creates
 // two accounts and moves around some virtual money.
 
 import javax.swing.JTextArea;
@@ -16,8 +16,8 @@ public class U7A1 extends JApplet
         out.setFont(new Font("Monospaced", Font.PLAIN, 16));
         out.append("Account Information\n-------------------\n\n");
 
-        BankAccount_Old account1 = new BankAccount_Old();
-        BankAccount_Old account2 = new BankAccount_Old(1500);
+        BankAccount_Older account1 = new BankAccount_Older();
+        BankAccount_Older account2 = new BankAccount_Older(1500);
 
         out.append("Initial Balance for Account " + account1.getAccountNumber() +
                 " = $ " + String.format("%.2f", account1.getBalance()));
@@ -32,7 +32,7 @@ public class U7A1 extends JApplet
         account1.calculate();
         account2.calculate();
 
-        out.append("\n" + BankAccount_Old.transfer(account1, account2, 550));
+        out.append("\n" + BankAccount_Older.transfer(account1, account2, 550));
 
         account1.calculate();
         account2.calculate();
@@ -43,7 +43,7 @@ public class U7A1 extends JApplet
                 " = $ " + String.format("%.2f", account2.getBalance()));
 
         out.append(String.format("\n\nInterest Rate = %.1f %%",
-                BankAccount_Old.getInterestRate()));
+                BankAccount_Older.getInterestRate()));
 
         setSize(500, 420);
         Container container = getContentPane();

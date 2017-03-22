@@ -1,18 +1,19 @@
 // Yegor Kuznetsov
 //
-// This is the BBPlayer class. It does
+// This is the BBPlayer_Old class. It does
 // some stuff with strings and arrays.
 
 import java.util.StringTokenizer;
 
-public class BBPlayer
+public class BBPlayer implements Measurable
 {
-    int num;
-    int year;
-    String pos;
-    double ppg;
+    private int num;
+    private int year;
+    private String pos;
+    private double ppg;
 
-    public BBPlayer(String line) {
+    public BBPlayer(String line)
+    {
         StringTokenizer st = new StringTokenizer(line);
         num = Integer.parseInt(st.nextToken());
         year = Integer.parseInt(st.nextToken());
@@ -25,7 +26,7 @@ public class BBPlayer
         return num;
     }
 
-    public double getPpg()
+    public double getMeasure()
     {
         return ppg;
     }
