@@ -3,6 +3,7 @@
 // The BankAccount class manages... bank accounts! It stores
 // their balance and has a number of methods to move around money.
 // It also implements an interface to send data.
+// The data is only used if the balance > 1000.
 
 public class BankAccount implements Measurable
 {
@@ -76,5 +77,10 @@ public class BankAccount implements Measurable
             return withdraw + "\n" + b.deposit(amount);
         else
             return withdraw + "\nDeposit Rejected";
+    }
+
+    public boolean accept()
+    {
+        return balance > 1000;
     }
 }

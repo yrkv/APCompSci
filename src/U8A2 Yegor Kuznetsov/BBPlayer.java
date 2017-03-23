@@ -3,6 +3,7 @@
 // This is the BBPlayer class. It does
 // some stuff with strings and arrays.
 // It also implements an interface to send data.
+// The data is only used if ppg > 10.
 
 import java.util.StringTokenizer;
 
@@ -40,5 +41,10 @@ public class BBPlayer implements Measurable
     public String getPos()
     {
         return pos;
+    }
+
+    public boolean accept()
+    {
+        return ppg > 10;
     }
 }

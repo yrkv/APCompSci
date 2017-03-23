@@ -1,6 +1,8 @@
 // Yegor Kuznetsov
 //
-// This is a driver class meant to show polymorphism
+// This is a driver class meant to show polymorphism.
+// It handles BBPlayer objects and BankAccount objects
+// with the same methods in the same class.
 
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
@@ -10,16 +12,16 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class U8A1
+public class U8A2
 {
     private JTextArea out = new JTextArea();
 
     public static void main(String[] args)
     {
-        U8A1 u8a1 = new U8A1();
+        U8A2 u8a2 = new U8A2();
     }
 
-    public U8A1()
+    public U8A2()
     {
         JFrame frame = new JFrame();
         out.setFont(new Font("Monospaced", Font.BOLD, 14));
@@ -55,7 +57,7 @@ public class U8A1
         out.append("--------------\n\n");
         out.append("Minimum points Per Game = " + DataSet.getMin() + "\n\n");
         out.append("Maximum points Per Game = " + DataSet.getMax() + "\n\n");
-        out.append("Average points Per Game = " + DataSet.getAve() + "\n\n");
+        out.append(String.format("Average Points Per Game = %.2f\n\n", DataSet.getAve()));
     }
 
     private void testBankAccount()
