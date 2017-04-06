@@ -11,9 +11,9 @@ public class U8Test
 {
     public static void main(String[] args)
     {
-        String[] ll1l11l1 = new String[11];
+        String[] a = new String[11];
         for (int aa = 0; aa < 11; aa++)
-            ll1l11l1[aa] = (aa + 2) + "";
+            a[aa] = (aa + 2) + "";
 
         String[] aaa = {"A", "B", "C", "D", "F"};
 
@@ -22,7 +22,7 @@ public class U8Test
         aaaa.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         aaaa.setSize(160, 400);
 
-        Tally aaaaa = new Tally(ll1l11l1);
+        Tally aaaaa = new Tally(a);
         for (int aa = 0; aa < 100; aa++)
             aaaaa.process(new Dice((int) (Math.random() * 6 + 1),
                     (int) (Math.random() * 6 + 1)));
@@ -39,8 +39,8 @@ public class U8Test
         aaaaaaa.append("\t----------\n\n");
         aaaaaaa.append("Item\t\tTally\n");
         aaaaaaa.append("----\t\t-----");
-        for (int aa = 0; aa < ll1l11l1.length; aa++)
-            aaaaaaa.append("\n " + ll1l11l1[aa] + "\t\t " + aaaaa.getTally()[aa]);
+        for (int aa = 0; aa < a.length; aa++)
+            aaaaaaa.append("\n " + a[aa] + "\t\t " + aaaaa.getTally()[aa]);
         aaaaaaa.append("\n\n\n\n");
         aaaaaaa.append("\tQuiz Tally\n");
         aaaaaaa.append("\t----------\n\n");
