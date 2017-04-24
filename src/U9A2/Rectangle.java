@@ -1,7 +1,7 @@
 // Yegor Kuznetsov
 //
-// This is the Rectangle class. It has a rendering method that draws several lines.
-// It cannot be extended.
+// This is the Rectangle class. It has a rendering method
+// that draws several lines. It cannot be extended.
 
 import java.awt.Graphics;
 
@@ -14,7 +14,6 @@ public final class Rectangle extends Line
         super(x, y, len);
         width = wid;
     }
-
 
     public void draw(Graphics g)
     {
