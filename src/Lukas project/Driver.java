@@ -28,7 +28,7 @@ public class Driver
         ArrayList<String> list = new ArrayList<String>();
         try
         {
-            Scanner scanner = new Scanner(new File("WordMasterMind.txt"));
+            Scanner scanner = new Scanner(new File("Word_Master_Mind.txt"));
             while (scanner.hasNextLine())
                 list.add(/*new String(*/scanner.nextLine()/*)*/); // why do you have "new String"? it doesnt do anything.
         }
